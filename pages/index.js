@@ -1,14 +1,16 @@
 /*********************************************************************************
-* BTI425 – Assignment 4
+* BTI425 – Assignment 6
 *
 * I declare that this assignment is my own work in accordance with Seneca's
 * Academic Integrity Policy:
 * 
 * https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
 * 
-* Name: ______Ram Grover______ Student ID: _____158824219_____ Date: _____21-03-2024_____
+* Name: Ram Grover | Student ID: 158824219 | Date: 12 April 2024
 *
-********************************************************************************/ 
+* Vercel App (Deployed) Link: https://museum-2de0v0mlc-rams-projects-b629a47a.vercel.app/
+
+*************************************************************************** *****/
 import { Row, Col } from 'react-bootstrap';
 import Layout from '@/components/Layout';
 
