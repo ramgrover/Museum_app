@@ -5,6 +5,7 @@ import {useRouter} from 'next/router';
 import {useState} from 'react';
 import { useAtom } from "jotai";
 import { searchHistoryAtom } from "@/store";
+import { addToHistory } from "@/lib/userData";
 
 export default function MainNav(){
 
@@ -24,9 +25,18 @@ export default function MainNav(){
       setSearchField("");
       setIsExpanded(false);
       setSearchHistory(current => [...current, `title=true&q=${searchField}`]);
+      //setSearchHistory(current => [...current, `title=true&q=${searchField}`]);
+      updatehistory(`title=true&q=${searchField}`);
     }
     
   }
+
+  async function updatehistory(objectID){
+   
+      await addToHistory(objectID);
+      //setShowAdded(true);
+    
+  };
 
   function logout(){
     setIsExpanded(false);
